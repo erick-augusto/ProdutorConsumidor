@@ -21,6 +21,13 @@ public class Mesa extends Thread {
         Random ran = new Random();
         for(int i = 0; i < 40; i++){
             Pedido p = new Pedido();
+            try{
+                fila.put(p);
+                System.out.println("Novo pedido nº"+p.numero+" da mesa "+numero);
+                Thread.sleep(ran.nextInt(1000));
+            } catch(InterruptedException ex){
+                break;
+            }
         }
     }
 }
