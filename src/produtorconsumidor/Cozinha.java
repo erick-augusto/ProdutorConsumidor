@@ -12,4 +12,9 @@ public class Cozinha extends Thread {
     public Cozinha(BlockingQueue<Pedido> fila){
         this.fila = fila;
     }
+    
+    @Override
+    public void run(){
+        
+    }
 }
