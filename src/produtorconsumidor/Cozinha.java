@@ -1,5 +1,6 @@
 package produtorconsumidor;
 
+import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 
 /**
@@ -15,6 +16,9 @@ public class Cozinha extends Thread {
     
     @Override
     public void run(){
-        
+        Random ran = new Random();
+        for(int i = 0; i < 5000; i++){
+            
+        }
     }
 }
