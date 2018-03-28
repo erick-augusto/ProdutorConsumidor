@@ -1,5 +1,8 @@
 package produtorconsumidor;
 
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
 /**
  *
  * @author Erick
@@ -7,7 +10,7 @@ package produtorconsumidor;
 public class ProdutorConsumidor {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        BlockingQueue<Pedido> pedidos = new ArrayBlockingQueue<Pedido>(100);
     }
     
 }
