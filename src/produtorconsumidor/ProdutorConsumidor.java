@@ -17,6 +17,9 @@ public class ProdutorConsumidor {
         Mesa m3 = new Mesa(3,pedidos);
         Mesa m4 = new Mesa(4,pedidos);
         Mesa m5 = new Mesa(5,pedidos);
+        
+        Cozinha c1 = new Cozinha(pedidos);
+        Cozinha c2 = new Cozinha(pedidos);
     }
     
 }
