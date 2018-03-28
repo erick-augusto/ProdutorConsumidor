@@ -20,6 +20,12 @@ public class ProdutorConsumidor {
         
         Cozinha c1 = new Cozinha(pedidos);
         Cozinha c2 = new Cozinha(pedidos);
+        
+        m1.start();
+        m2.start();
+        m3.start();
+        m4.start();
+        m5.start();
     }
     
 }
