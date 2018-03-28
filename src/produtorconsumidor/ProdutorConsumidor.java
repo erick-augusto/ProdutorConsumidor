@@ -26,6 +26,9 @@ public class ProdutorConsumidor {
         m3.start();
         m4.start();
         m5.start();
+        
+        c1.start();
+        c2.start();
     }
     
 }
