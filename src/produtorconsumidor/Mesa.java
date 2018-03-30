@@ -20,7 +20,7 @@ public class Mesa extends Thread {
     public void run(){
         Random ran = new Random();
         int num_pedidos = ran.nextInt(50);
-        for(int i = 0; i < 40; i++){
+        for(int i = 0; i < num_pedidos; i++){
             Pedido p = new Pedido();
             try{
                 fila.put(p);
