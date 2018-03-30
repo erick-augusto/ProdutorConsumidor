@@ -19,6 +19,7 @@ public class Mesa extends Thread {
     @Override
     public void run(){
         Random ran = new Random();
+        int num_pedidos = ran.nextInt(50);
         for(int i = 0; i < 40; i++){
             Pedido p = new Pedido();
             try{
