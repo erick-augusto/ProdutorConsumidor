@@ -17,7 +17,7 @@ public class Cozinha extends Thread {
     @Override
     public void run(){
         Random ran = new Random();
-        Random buscar = new Random();
+        int buscar = ran.nextInt(5000);
         for(int i = 0; i < 5000; i++){
             try{
                 Pedido p = fila.take();
