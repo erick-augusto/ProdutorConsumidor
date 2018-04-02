@@ -18,7 +18,7 @@ public class Cozinha extends Thread {
     public void run(){
         Random ran = new Random();
         int buscar = ran.nextInt(5000);
-        for(int i = 0; i < 5000; i++){
+        for(int i = 0; i < buscar; i++){
             try{
                 Pedido p = fila.take();
                 Thread.sleep(ran.nextInt(3000));
