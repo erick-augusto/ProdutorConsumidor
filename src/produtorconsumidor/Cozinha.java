@@ -21,7 +21,7 @@ public class Cozinha extends Thread {
         for(int i = 0; i < buscar; i++){
             try{
                 Pedido p = fila.take();
-                Thread.sleep(ran.nextInt(3000));
+                Thread.sleep(ran.nextInt(2000));
                 System.out.println("Pedido nº "+ p.numero + "(" + p.descricao + ") pronto!");
             } catch(InterruptedException ex){
                 break;
