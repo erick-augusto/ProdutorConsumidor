@@ -18,6 +18,10 @@ public class ProdutorConsumidor {
         Mesa vet[] = new Mesa[num_mesas];
         for(int i = 0; i < num_mesas; i++){
             Mesa mi = new Mesa(i,pedidos);
+            vet[i] = mi;
+        }
+        for(int i = 0; i < num_mesas; i++){
+            vet[i].start();
         }
         Mesa m1 = new Mesa(1,pedidos);
         Mesa m2 = new Mesa(2,pedidos);
