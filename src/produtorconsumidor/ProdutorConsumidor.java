@@ -15,6 +15,7 @@ public class ProdutorConsumidor {
         
         Random ran = new Random();
         int num_mesas = ran.nextInt(10);
+        Mesa vet[] = new Mesa[num_mesas];
         for(int i = 0; i < num_mesas; i++){
             Mesa mi = new Mesa(i,pedidos);
         }
