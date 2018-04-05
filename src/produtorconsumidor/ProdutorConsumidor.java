@@ -1,5 +1,6 @@
 package produtorconsumidor;
 
+import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -12,6 +13,8 @@ public class ProdutorConsumidor {
     public static void main(String[] args) {
         BlockingQueue<Pedido> pedidos = new ArrayBlockingQueue<Pedido>(100);
         
+        Random ran = new Random();
+        int num_mesas = ran.nextInt(10);
         Mesa m1 = new Mesa(1,pedidos);
         Mesa m2 = new Mesa(2,pedidos);
         Mesa m3 = new Mesa(3,pedidos);
