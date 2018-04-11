@@ -30,6 +30,9 @@ public class ProdutorConsumidor {
             Cozinha ci = new Cozinha(pedidos);
             cvet[i] = ci;
         }
+        for(int i = 0; i < num_cozinha; i++){
+            cvet[i].start();
+        }
         /*Mesa m1 = new Mesa(1,pedidos);
         Mesa m2 = new Mesa(2,pedidos);
         Mesa m3 = new Mesa(3,pedidos);
