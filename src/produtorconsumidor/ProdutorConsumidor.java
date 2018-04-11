@@ -26,7 +26,10 @@ public class ProdutorConsumidor {
         
         int num_cozinha = ran.nextInt(5);
         Cozinha cvet[] = new Cozinha[num_cozinha];
-        
+        for(int i = 0; i < num_cozinha; i++){
+            Cozinha ci = new Cozinha(pedidos);
+            cvet[i] = ci;
+        }
         /*Mesa m1 = new Mesa(1,pedidos);
         Mesa m2 = new Mesa(2,pedidos);
         Mesa m3 = new Mesa(3,pedidos);
