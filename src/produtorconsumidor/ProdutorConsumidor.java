@@ -23,6 +23,9 @@ public class ProdutorConsumidor {
         for(int i = 0; i < num_mesas; i++){
             vet[i].start();
         }
+        
+        int num_cozinha = ran.nextInt(5);
+        
         /*Mesa m1 = new Mesa(1,pedidos);
         Mesa m2 = new Mesa(2,pedidos);
         Mesa m3 = new Mesa(3,pedidos);
