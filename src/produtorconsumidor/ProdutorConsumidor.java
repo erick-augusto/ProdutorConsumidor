@@ -39,8 +39,8 @@ public class ProdutorConsumidor {
         Mesa m4 = new Mesa(4,pedidos);
         Mesa m5 = new Mesa(5,pedidos);*/
         
-        Cozinha c1 = new Cozinha(pedidos);
-        Cozinha c2 = new Cozinha(pedidos);
+        /*Cozinha c1 = new Cozinha(pedidos);
+        Cozinha c2 = new Cozinha(pedidos);*/
         
         /*m1.start();
         m2.start();
@@ -48,8 +48,8 @@ public class ProdutorConsumidor {
         m4.start();
         m5.start();*/
         
-        c1.start();
-        c2.start();
+        /*c1.start();
+        c2.start();*/
     }
     
 }
